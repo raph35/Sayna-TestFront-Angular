@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('../src/assets/scss/_layout.scss');
+@import '../src/assets/scss/navbar';
+
 body {
     margin: 0;
 }

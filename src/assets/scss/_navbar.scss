@@ -1,0 +1,18 @@
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    .nav-list{
+        display: flex;
+        list-style-type:none;
+        margin: 0.2em 0;
+        padding: 0;
+    }
+}
+
+.vertical-nav {
+    flex-direction: column;
+
+    .nav-list {
+        flex-direction: column;
+    }
+}
