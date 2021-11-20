@@ -1,1 +1,13 @@
-<p>card works!</p>
+<div class="card-perso">
+    <div class="card-header-perso"></div>
+    <div class="card-money">
+        {{ card.money }} <strong>{{ card.currency | uppercase}}</strong>
+    </div>
+    <div class="general-info">
+        <div class="card-info">
+            <div class="card-id">{{ card.id_card }}</div>
+            <div class="card-exp-date">{{ card.expiration_date}}</div>
+        </div>
+        <div class="card-logo"></div>
+    </div>
+</div>

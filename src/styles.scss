@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .full-contaier {
@@ -26,11 +27,13 @@ body {
     // min-width: 200px;
     // width: 20%;
     max-width: 300px;
-    box-shadow: 20px 0px 10px #f9fafdff;
+    box-shadow: 11px 1px 10px #ececec;;
     z-index: 1;
+    position:fixed;
 }
 
 #main {
     // width: auto;
-    background-color: #fcfdffff;
+    margin-left: auto;
+    background-color: #f7faff;
 }

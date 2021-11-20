@@ -1,2 +1,5 @@
-<app-activitie></app-activitie>
-<app-activitie></app-activitie>
+<div class="d-flex space-between">
+    <h4>Recent Activities</h4>
+    <button type="button">View a report</button>
+</div>
+<app-activitie *ngFor="let activitie of activities" [activitie]="activitie"></app-activitie>

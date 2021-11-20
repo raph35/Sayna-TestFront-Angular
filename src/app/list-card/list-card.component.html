@@ -1,3 +1,4 @@
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
+<div>Your Cards <button>New card<span class="icon-add"></span></button></div>
+<div class="list-card">
+    <app-card *ngFor="let card of cards" [card]="card"></app-card>
+</div>

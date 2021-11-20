@@ -1,1 +1,23 @@
-<p>activitie works!</p>
+<div>{{ activitie.title }}</div>
+<div class="list-item" *ngFor="let trans of activitie.transaction">
+    <ng-container *ngIf="trans.type == 'debit' || trans.type == 'payement'">
+        <div>
+            <div>To {{ trans.destinataire }}</div>
+            <div>{{ trans.status }}</div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="trans.type == 'conversion'">
+        <div>
+            <div>{{ trans.origin | uppercase }} to {{ trans.destination | uppercase }}</div>
+            <div>{{ trans.status }}</div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="trans.type == 'deposit'">
+        <div>
+            <div>Deposit to your {{ trans.currency | uppercase }} balance</div>
+            <div>{{ trans.status }}</div>
+        </div>
+    </ng-container>
+
+        <div>{{ trans.value | number }}</div>
+</div>

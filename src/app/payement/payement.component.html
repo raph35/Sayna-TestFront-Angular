@@ -1,1 +1,35 @@
-<p>payement works!</p>
+<h4>Int. Payement</h4>
+<div class="row">
+    <div class="col ">
+        <span><strong>{{ data.awaiting }}</strong></span>
+        <span>Awaiting</span>
+    </div>
+    <div class="col">
+        <span><strong>{{ data.in_progress }}</strong></span>
+        <span>In Progress</span>
+    </div>
+    <div class="col">
+        <span><strong>{{ data.completed }}</strong></span>
+        <span>Completed</span>
+    </div>
+    <div class="col">
+        <span><strong>{{ data.canceled }}</strong></span>
+        <span>Canceled</span>
+    </div>
+</div>
+
+<div class="resume-transaction">
+     <div><span class="icon-arrow-left-down">Money In</span></div>
+     <div>
+         <div class="money">10 425</div>
+         <div class="currency">USD</div>
+     </div>
+</div>
+
+<div class="resume-transaction">
+    <div><span class="icon-arrow-right-up">Money Out</span></div>
+    <div>
+        <div class="money">4 640</div>
+        <div class="currency">USD</div>
+    </div>
+</div>
