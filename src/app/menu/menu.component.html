@@ -1,39 +1,39 @@
 <nav class="nav-bar vertical-nav">
-    <h4>
-        <span>logo</span> Klamma
-    </h4>
     <ul class="nav-list">
-        <li class="nav-item">
-            <span>acceuil</span> Overview
+        <li>
+            <a routerLink="/" class="navbrand"><span class="icon-logo-blue"></span> Klamma</a>
         </li>
         <li class="nav-item">
-            <span>wallet</span> Cards
+            <a routerLinkActive="active" routerLink="/card" class="navlink"><span class="icon-home"></span> Overview</a>
         </li>
         <li class="nav-item">
-            <span>payement</span> Payements
-            <ul class="submenu nav-list">
+            <a routerLinkActive="active" routerLink="/" class="navlink"><span class="icon-black"></span> Cards</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#sub_menu_payement" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a href="#" class="navlink"><span class="icon-payement"></span> Payements</a>
+            <ul class="submenu nav-list collapse" id="sub_menu_payement">
                 <li class="nav-sub-item">option 1</li>
                 <li class="nav-sub-item">option 2</li>
             </ul>
         </li>
-        <li class="nav-item">
-            <span>log</span> Reports
-            <ul class="submenu nav-list">
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#sub_menu_report" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a href="#" class="navlink"><span class="icon-reports"></span> Reports</a>
+            <ul class="submenu nav-list collapse" id="sub_menu_report">
                 <li class="nav-sub-item">option 1</li>
                 <li class="nav-sub-item">option 2</li>
             </ul>
         </li>
         <li class="nav-item nav-list">
-            <span>contact</span> Contacts
+            <a href="#" class="navlink"><span class="icon-contact"></span> Contacts</a>
         </li>
     </ul>
 
-    <ul class="nav-list mr-auto">
+    <ul class="nav-list">
         <li class="nav-item">
-            <span>setting</span> Settings
+            <a href="#" class="navlink"><span class="icon-cog"></span> Settings</a>
         </li>
         <li class="nav-item">
-            <span>avatar</span> Account
+            <a href="#" class="navlink"><span class="icon-user"></span> Account</a>
         </li>
     </ul>
 </nav>

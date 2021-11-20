@@ -2,6 +2,7 @@
 
 @import url('../src/assets/scss/_layout.scss');
 @import '../src/assets/scss/navbar';
+@import '../src/assets/scss/icon';
 
 body {
     margin: 0;
@@ -20,15 +21,16 @@ body {
     flex-direction: row;
 }
 #left-menu {
-    width: 20%;
-    min-width: 200px;
     height: 100vh;
     background-color: #ffffff;
+    // min-width: 200px;
+    // width: 20%;
+    max-width: 300px;
     box-shadow: 20px 0px 10px #f9fafdff;
     z-index: 1;
 }
 
 #main {
-    width: 80%;
+    // width: auto;
     background-color: #fcfdffff;
 }

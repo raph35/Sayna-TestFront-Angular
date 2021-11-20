@@ -1,16 +1,47 @@
 .nav-bar{
     display: flex;
     flex-direction: row;
+    height: 100%;
+    color: #2f3677;
+
     .nav-list{
         display: flex;
         list-style-type:none;
         margin: 0.2em 0;
         padding: 0;
     }
+
+    .navlink, .navbrand {
+        text-decoration: none;
+        display: block;
+        padding: 0.5em;
+        border-radius: .4em;
+        color: #2f3677;
+    }
+
+    .navbrand {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .nav-item {
+        padding: 0.15em 0;
+    }
+
+    .active {
+        background-color: #f5f8fe;
+    }
+
+    .navlink:hover {
+        background-color: #f5f8fe;
+    }
 }
 
 .vertical-nav {
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position:fixed;
 
     .nav-list {
         flex-direction: column;
