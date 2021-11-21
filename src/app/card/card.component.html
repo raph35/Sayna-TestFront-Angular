@@ -1,6 +1,9 @@
-<div class="card-perso">
-    <div class="card-header-perso"></div>
-    <div class="card-money">
+<div class="card-perso" [ngClass]="{'card-master-card': isMasterCard()}">
+    <div class="card-header-perso">
+        <span *ngIf="card.theme == 'dark'" class="icon-logo-white"></span>
+        <span *ngIf="card.theme == 'light'" class="icon-logo-black"></span>
+    </div>
+    <div class="card-money" [ngClass]="{'dark': isMasterCard()}">
         {{ card.money }} <strong>{{ card.currency | uppercase}}</strong>
     </div>
     <div class="general-info">
@@ -8,6 +11,10 @@
             <div class="card-id">{{ card.id_card }}</div>
             <div class="card-exp-date">{{ card.expiration_date}}</div>
         </div>
-        <div class="card-logo"></div>
+        <div class="card-logo">
+            <span *ngIf="card.type == 'master-card' && card.theme == 'dark'"  class="icon-master-card"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+            <span *ngIf="card.type == 'visa' && card.theme == 'light'" class="icon-logo-visa"><span class="path1"></span><span class="path2"></span></span>
+            <span *ngIf="card.type == 'master-card' && card.theme == 'light'"  class="icon-master-card-nb"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+        </div>
     </div>
 </div>

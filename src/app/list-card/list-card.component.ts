@@ -14,6 +14,7 @@ export class ListCardComponent implements OnInit {
       id_card: "5495 7381 3759 2321",
       expiration_date: "04 / 24",
       type: "master-card",
+      theme: "dark",
       locked: false
     },
     {
@@ -22,6 +23,7 @@ export class ListCardComponent implements OnInit {
       id_card: "4535 8933 1673 6770",
       expiration_date: "05 / 25",
       type: "visa",
+      theme: "light",
       locked: false
     },
     {
@@ -30,6 +32,7 @@ export class ListCardComponent implements OnInit {
       id_card: "5363 7205 7398 4138",
       expiration_date: "01 / 25",
       type: "master-card",
+      theme: "light",
       locked: true
     },
   ]

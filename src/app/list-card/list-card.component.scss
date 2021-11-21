@@ -1,3 +1,21 @@
 .list-card {
     display: flex;
+    margin: 1em 0;
+    overflow: hidden;
+}
+
+.title-header {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+
+    .title-text {
+        margin-right: 1em;
+        color:#31334e;
+    }
+
+    button {
+        font-size: 0.5em;
+    }
 }

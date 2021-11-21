@@ -6,7 +6,23 @@
 
 body {
     margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #2f3677;
+}
+
+* {
+    color: inherit;
+}
+
+.button {
+    font-size: 0.8em;
+    border-radius: .5em;
+    padding: .5em;
+    border:none;
+}
+
+h4, h5 {
+    font-weight: bold !important;
 }
 
 .full-contaier {

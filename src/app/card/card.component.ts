@@ -13,4 +13,7 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isMasterCard(){
+    return this.card.type == "master-card" && this.card.theme == "dark";
+  }
 }

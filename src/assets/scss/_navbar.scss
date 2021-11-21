@@ -30,6 +30,7 @@
 
     .active {
         background-color: #f5f8fe;
+        font-weight: bold;
     }
 
     .navlink:hover {
@@ -40,7 +41,7 @@
 .vertical-nav {
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
 
     .nav-list {
         flex-direction: column;
