@@ -3,21 +3,21 @@
         <li>
             <a routerLink="/" class="navbrand"><span class="icon-logo-blue"></span> Klamma</a>
         </li>
-        <li class="nav-item" routerLinkActive="active" >
-            <a routerLink="/" class="navlink"><span class="icon-home"></span> Overview</a>
+        <li class="nav-item" routerLinkActive="active" routerLink="/home">
+            <a class="navlink"><span class="icon-home"></span> Overview</a>
         </li>
-        <li class="nav-item" routerLinkActive="active" >
-            <a routerLink="/card" class="navlink"><span class="icon-wallet"></span> Cards</a>
+        <li class="nav-item" routerLinkActive="active" routerLink="/card">
+            <a class="navlink"><span class="icon-wallet"></span> Cards</a>
         </li>
-        <li class="nav-item" routerLinkActive="active" >
-            <a routerLink="/payement" class="navlink"><span class="icon-payement"></span> Payements</a>
+        <li class="nav-item" routerLinkActive="active" routerLink="/payement">
+            <a class="navlink"><span class="icon-payement"></span> Payements</a>
             <span class="icon-chevron-down" data-bs-toggle="collapse" data-bs-target="#sub_menu_payement" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
         </li>
         <ul class="submenu nav-list collapse" id="sub_menu_payement">
             <li class="nav-sub-item nav-item"><a href="#" class="navlink"><span class="icon-pencil"></span>Option 1</a></li>
             <li class="nav-sub-item nav-item"><a href="#" class="navlink"><span class="icon-pencil"></span>Option 2</a></li>
         </ul>
-        <li class="nav-item" routerLinkActive="active"  data-bs-toggle="collapse" data-bs-target="#sub_menu_report" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <li class="nav-item" routerLinkActive="active">
             <a routerLink="/report" class="navlink"><span class="icon-reports"></span> Reports</a>
             <span class="icon-chevron-down" data-bs-toggle="collapse" data-bs-target="#sub_menu_report" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
         </li>
