@@ -1,7 +1,11 @@
 <div class="card-perso" [ngClass]="{'card-master-card': isMasterCard()}">
     <div class="card-header-perso">
-        <span *ngIf="card.theme == 'dark'" class="icon-logo-white"></span>
-        <span *ngIf="card.theme == 'light'" class="icon-logo-black"></span>
+        <div>
+            <span *ngIf="card.theme == 'dark'" class="icon-logo-white"></span>
+            <span *ngIf="card.theme == 'light'" class="icon-logo-black"></span>
+            <ng-container *ngIf="card.locked">Corporate</ng-container>
+        </div>
+        <span *ngIf="card.locked" class="icon-lock"></span>
     </div>
     <div class="card-money" [ngClass]="{'dark': isMasterCard()}">
         {{ card.money }} <strong>{{ card.currency | uppercase}}</strong>

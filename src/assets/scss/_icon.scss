@@ -5,7 +5,7 @@
     url('../fonts/icomoon.ttf?trrjkp') format('truetype'),
     url('../fonts/icomoon.woff?trrjkp') format('woff'),
     url('../fonts/icomoon.svg?trrjkp#icomoon') format('svg');
-  font-weight: normal;
+font-weight: normal;
   font-style: normal;
   font-display: block;
 }
@@ -211,4 +211,8 @@
 }
 .icon-cog:before {
   content: "\e994";
+}
+
+.no-padding {
+  padding: 0;
 }
