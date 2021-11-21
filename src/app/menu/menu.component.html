@@ -3,27 +3,29 @@
         <li>
             <a routerLink="/" class="navbrand"><span class="icon-logo-blue"></span> Klamma</a>
         </li>
+        <li class="nav-item" routerLinkActive="active" >
+            <a routerLink="/" class="navlink"><span class="icon-home"></span> Overview</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" >
+            <a routerLink="/card" class="navlink"><span class="icon-wallet"></span> Cards</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" >
+            <a routerLink="/payement" class="navlink"><span class="icon-payement"></span> Payements</a>
+            <span class="icon-chevron-down" data-bs-toggle="collapse" data-bs-target="#sub_menu_payement" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
+        </li>
+        <ul class="submenu nav-list collapse" id="sub_menu_payement">
+            <li class="nav-sub-item nav-item"><a href="#" class="navlink"><span class="icon-pencil"></span>Option 1</a></li>
+            <li class="nav-sub-item nav-item"><a href="#" class="navlink"><span class="icon-pencil"></span>Option 2</a></li>
+        </ul>
+        <li class="nav-item" routerLinkActive="active"  data-bs-toggle="collapse" data-bs-target="#sub_menu_report" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a routerLink="/report" class="navlink"><span class="icon-reports"></span> Reports</a>
+            <span class="icon-chevron-down" data-bs-toggle="collapse" data-bs-target="#sub_menu_report" role="button" aria-expanded="false" aria-controls="collapseExample"></span>
+        </li>
+        <ul class="submenu nav-list collapse" id="sub_menu_report">
+            <li class="nav-sub-item nav-item"><a href="#" class="navlink"><span class="icon-pencil"></span>Option 1</a></li>
+            <li class="nav-sub-item nav-item"><a href="#" class="navlink"><span class="icon-pencil"></span>Option 2</a></li>
+        </ul>
         <li class="nav-item">
-            <a routerLinkActive="active" routerLink="/" class="navlink"><span class="icon-home"></span> Overview</a>
-        </li>
-        <li class="nav-item">
-            <a routerLinkActive="active" routerLink="/card" class="navlink"><span class="icon-wallet"></span> Cards</a>
-        </li>
-        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#sub_menu_payement" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <a routerLinkActive="active" routerLink="/payement" class="navlink"><span class="icon-payement"></span> Payements</a>
-            <ul class="submenu nav-list collapse" id="sub_menu_payement">
-                <li class="nav-sub-item"><span class="icon-pencil">Option 1</span></li>
-                <li class="nav-sub-item"><span class="icon-pencil">Option 2</span></li>
-            </ul>
-        </li>
-        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#sub_menu_report" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <a routerLinkActive="active" routerLink="/report" class="navlink"><span class="icon-reports"></span> Reports</a>
-            <ul class="submenu nav-list collapse" id="sub_menu_report">
-                <li class="nav-sub-item"><span class="icon-pencil">Option 1</span></li>
-                <li class="nav-sub-item"><span class="icon-pencil">Option 2</span></li>
-            </ul>
-        </li>
-        <li class="nav-item nav-list">
             <a routerLinkActive="active" routerLink="/contact" class="navlink"><span class="icon-contact"></span> Contacts</a>
         </li>
     </ul>

@@ -26,6 +26,11 @@
 
     .nav-item {
         padding: 0.15em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: .5em;
+        margin:.2em 0;
     }
 
     .active {
@@ -33,7 +38,7 @@
         font-weight: bold;
     }
 
-    .navlink:hover {
+    .nav-item:hover {
         background-color: #f5f8fe;
     }
 }
