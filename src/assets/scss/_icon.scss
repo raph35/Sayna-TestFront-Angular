@@ -33,12 +33,13 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: .5em;
 }
 
 .icon-arrow-down-left:before {
   content: "\e921";
 }
-.icon-arrow-down-right:before {
+.icon-arrow-up-right:before {
   content: "\e922";
 }
 .icon-bell:before {
@@ -77,17 +78,14 @@
 }
 .icon-message .path1:before {
   content: "\e901";
-  color: rgb(0, 0, 0);
 }
 .icon-message .path2:before {
   content: "\e902";
   margin-left: -1.1015625em;
-  color: rgb(0, 0, 0);
 }
 .icon-message .path3:before {
   content: "\e903";
   margin-left: -1.1015625em;
-  color: rgb(0, 0, 0);
   opacity: 0.98;
 }
 .icon-master-card-nb .path1:before {
@@ -107,13 +105,11 @@
 }
 .icon-avatar .path1:before {
   content: "\e90e";
-  color: rgb(0, 0, 0);
   opacity: 0.98;
 }
 .icon-avatar .path2:before {
   content: "\e90f";
   margin-left: -0.791015625em;
-  color: rgb(0, 0, 0);
 }
 .icon-master-card .path1:before {
   content: "\e918";
@@ -133,67 +129,55 @@
 }
 .icon-plus-rect .path1:before {
   content: "\e904";
-  color: rgb(0, 0, 0);
   opacity: 0.98;
 }
 .icon-plus-rect .path2:before {
   content: "\e905";
   margin-left: -1.3134765625em;
-  color: rgb(0, 0, 0);
 }
 .icon-plus-rect .path3:before {
   content: "\e906";
   margin-left: -1.3134765625em;
-  color: rgb(0, 0, 0);
 }
 .icon-conversion .path1:before {
   content: "\e907";
-  color: rgb(0, 0, 0);
   opacity: 0.98;
 }
 .icon-conversion .path2:before {
   content: "\e908";
   margin-left: -0.9921875em;
-  color: rgb(0, 0, 0);
 }
 .icon-conversion .path3:before {
   content: "\e909";
   margin-left: -0.9921875em;
-  color: rgb(0, 0, 0);
 }
 .icon-conversion .path4:before {
   content: "\e90a";
   margin-left: -0.9921875em;
-  color: rgb(0, 0, 0);
   opacity: 0.98;
 }
 .icon-conversion .path5:before {
   content: "\e90b";
   margin-left: -0.9921875em;
-  color: rgb(0, 0, 0);
 }
 .icon-conversion .path6:before {
   content: "\e90c";
   margin-left: -0.9921875em;
-  color: rgb(0, 0, 0);
 }
 .icon-lock:before {
   content: "\e90d";
 }
 .icon-window .path1:before {
   content: "\e910";
-  color: rgb(3, 3, 3);
   opacity: 0.98;
 }
 .icon-window .path2:before {
   content: "\e911";
   margin-left: -1.35546875em;
-  color: rgb(3, 3, 3);
 }
 .icon-window .path3:before {
   content: "\e912";
   margin-left: -1.35546875em;
-  color: rgb(3, 3, 3);
 }
 .icon-contact:before {
   content: "\e913";

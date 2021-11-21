@@ -1,6 +1,10 @@
-<h5>Credit limit</h5>
-<strong>{{ creditLimit.value }}</strong> / {{ creditLimit.limit}} {{ creditLimit.currency | uppercase }}
-
-<h5>Online limit</h5>
-<strong>{{ onlineLimit.value }}</strong> / {{ onlineLimit.limit}} {{ onlineLimit.currency | uppercase }}
-
+<div class="row">
+    <div class="col">
+        <h5>Credit limit</h5>
+        <strong>{{ creditLimit.value }}</strong> / {{ creditLimit.limit}} {{ creditLimit.currency | uppercase }}
+    </div>
+    <div class="col">
+        <h5>Online limit</h5>
+        <strong>{{ onlineLimit.value }}</strong> / {{ onlineLimit.limit}} {{ onlineLimit.currency | uppercase }}
+    </div>
+</div>
